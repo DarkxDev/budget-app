@@ -1,0 +1,12 @@
+<h2><%= @category.name %></h2>
+
+<div>
+  <% @transactions.each do |transaction| %>
+    <div class="card card-transaction">
+      <p class="transaction-name"><%= transaction.name %></p>
+      <p class="transaction-amount"><%= transaction.amount %></p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to 'Add new Transaction', transactions_new_path %>

@@ -1,0 +1,6 @@
+<h2>New Transaction</h2>
+<%= form_with model: @transaction, url: transactions_create_path, html: { class: 'form' } do |f| %>
+  <%= f.text_field :name, placeholder: 'Transaction' %>
+  <%= f.number_field :amount, step: "0.01", placeholder: 'Amount' %>
+  <%= f.submit "Submit" %>
+<% end %>

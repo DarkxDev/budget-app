@@ -1,17 +1,6 @@
-<h3>New Category</h3>
-
-<%= form_with model: @category, url: home_create_path do |f| %>
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div>
-    <%= f.label :icon %>
-    <%= f.text_field :icon %>
-  </div>
-
-  <div>
-    <%= f.submit "Submit" %>
-  </div>
+<h2>New Category</h2>
+<%= form_with model: @category, url: home_create_path, html: { class: 'form' } do |f| %>
+  <%= f.text_field :name, placeholder: 'Category' %>
+  <%= f.text_field :icon, placeholder: 'Icon URL' %>
+  <%= f.submit "Submit" %>
 <% end %>

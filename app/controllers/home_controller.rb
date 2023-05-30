@@ -5,6 +5,11 @@ class HomeController < ApplicationController
     @categories = Group.all
   end
 
+  def show
+    @category = Group.find(params[:category_id])
+    @transactions = @category.entities
+  end
+
   def new
     @category = Group.new
   end

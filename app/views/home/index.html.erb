@@ -1,7 +1,10 @@
-<h1>Categories</h1>
+<h2>Categories</h2>
 
 <% @categories.each do |category| %>
-  <p><%= category.name %></p>
+  <div class="card card-category">
+    <p class="category-icon"><%= category.icon %></p>
+    <p><%= link_to category.name, home_show_path(category.id) %></p>
+  </div>
 <% end %>
 
 <%= link_to 'Add a new Category', home_new_path %>

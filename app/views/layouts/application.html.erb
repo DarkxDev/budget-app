@@ -10,22 +10,12 @@
   </head>
   <body>
     <div class="app-container">
-      <div class="alerts">
-        <% if notice %>
-          <p class="alert alert-success"><%= notice %></p>
-        <% end %>
-        <% if alert %>
-          <p class="alert alert-error"><%= alert %></p>
-        <% end %>
-      </div>
-
+      <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
       <% flash.each do |key, value| %>
         <div class="flash <%= key %>">
           <%= value %>
         </div>
       <% end %>
-      
-      <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
       <%= yield %>
     </div>
   </body>
