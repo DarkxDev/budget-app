@@ -1,0 +1,17 @@
+<h3>New Category</h3>
+
+<%= form_with model: @category, url: home_create_path do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :icon %>
+    <%= f.text_field :icon %>
+  </div>
+
+  <div>
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

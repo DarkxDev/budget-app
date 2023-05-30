@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'splash#index'
 
   get 'home/index', as: 'home_index'
+  get 'home/new', as: 'home_new'
+  post 'home/create', as: 'home_create'
 end
