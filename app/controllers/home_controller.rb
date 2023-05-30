@@ -2,13 +2,13 @@ class HomeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @categories = Group.all
+    @categories = Group.includes(:entities).all
   end
 
   def show
-    @category = Group.find(params[:category_id])
+    @category = Group.includes(:entities).find(params[:category_id])
     @transactions = @category.entities
-  end
+  end  
 
   def new
     @category = Group.new

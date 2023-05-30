@@ -1,6 +1,6 @@
 <h2>New Category</h2>
 <%= form_with model: @category, url: home_create_path, html: { class: 'form' } do |f| %>
   <%= f.text_field :name, placeholder: 'Category' %>
-  <%= f.text_field :icon, placeholder: 'Icon URL' %>
+  <%= f.text_field :icon, placeholder: 'Icon Name' %>
   <%= f.submit "Submit" %>
 <% end %>

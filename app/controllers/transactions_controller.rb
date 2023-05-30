@@ -2,8 +2,8 @@ class TransactionsController < ApplicationController
   before_action :set_category
 
   def index
-    @transactions = @category.entities
-  end
+    @transactions = @category.entities.includes(:group)
+  end  
 
   def new
     @transaction = Entity.new

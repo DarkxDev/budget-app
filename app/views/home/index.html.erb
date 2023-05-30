@@ -2,9 +2,12 @@
 
 <% @categories.each do |category| %>
   <div class="card card-category">
-    <p class="category-icon"><%= category.icon %></p>
-    <p><%= link_to category.name, home_show_path(category.id) %></p>
+    <div class='card-info'>
+      <p class="category-icon"><%= category.icon %></p>
+      <p><%= link_to category.name, home_show_path(category.id) %></p>
+    </div>
+    <p>$<%= category.entities.sum(:amount) %></p>
   </div>
 <% end %>
 
-<%= link_to 'Add a new Category', home_new_path %>
+<%= link_to 'Add A New Category', home_new_path %>
