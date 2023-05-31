@@ -1,4 +1,4 @@
-<h2>Sign up</h2>
+<h2 class='title'>SIGN UP</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form' }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -7,12 +7,9 @@
 
   <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email' %>
 
-  <%= f.password_field :password, autocomplete: "new-password",
-  placeholder: (@minimum_password_length ? "#{@minimum_password_length} Characters Minimum" : nil) %>
+  <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password' %>
 
   <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm Password' %>
 
-  <%= f.submit "Sign up" %>
+  <%= f.submit "SIGN UP", class: 'login'%>
 <% end %>
-
-<%= render "devise/shared/links" %>

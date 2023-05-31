@@ -3,7 +3,7 @@ class TransactionsController < ApplicationController
 
   def index
     @transactions = @category.entities.includes(:group)
-  end  
+  end
 
   def new
     @transaction = Entity.new

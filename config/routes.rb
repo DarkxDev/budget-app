@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get 'home/index/:category_id/new', to: 'transactions#new', as: 'transactions_new'
   post 'home/index/:category_id/create', to: 'transactions#create', as: 'transactions_create'
   
-  post 'home/index/new/create', as: 'home_create'
+  post 'home/index/create', to: 'home#create', as: 'home_create'
 
 end

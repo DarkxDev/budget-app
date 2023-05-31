@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>BudgetApp</title>
+    <script src="https://kit.fontawesome.com/773702659e.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,7 +11,7 @@
   </head>
   <body>
     <div class="app-container">
-      <!-- <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %> -->
+      <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
       <% flash.each do |key, value| %>
         <div class="flash <%= key %>">
           <%= value %>

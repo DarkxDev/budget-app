@@ -7,8 +7,8 @@ class HomeController < ApplicationController
 
   def show
     @category = Group.includes(:entities).find(params[:category_id])
-    @transactions = @category.entities
-  end  
+    @transactions = @category.entities.order('created_at DESC')
+  end
 
   def new
     @category = Group.new
