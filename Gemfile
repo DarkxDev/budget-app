@@ -79,3 +79,5 @@ gem 'devise'
 gem 'bundler', '~> 2.4', '>= 2.4.13'
 
 gem 'htmlbeautifier'
+
+gem 'rails-controller-testing'
