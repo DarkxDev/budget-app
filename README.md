@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -47,9 +48,9 @@
 
 <!-- LIVE DEMO -->
 
-### Live Demo <a name="live-demo"></a>
+## Live Demo <a name="live-demo"></a>
 
-Visit the site live [here.](https://github.com/DarkxDev/budget-app/pull/3)
+Visit the site live [here.](https://budgetapp-a94s.onrender.com/)
 
 You can see the video presentation for this project [here.](https://www.loom.com/share/8f12e2777cdc4a1980a936debc24bcd1)
 
