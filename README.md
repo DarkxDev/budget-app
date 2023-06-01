@@ -121,7 +121,7 @@ If you like this project please show us support by givintg it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my colleagues at Microverse for their support during the project.
+Original design idea by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
