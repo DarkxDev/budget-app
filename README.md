@@ -19,9 +19,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Budget App] <a name="about-project"></a>
+# 📖 Budget App <a name="about-project"></a>
 
-**[Budget App]** is a project created to manage and display entries in a library using Object Oriented Programming with Ruby.
+**Budget App** is a project created to manage and display entries in a library using Object Oriented Programming with Ruby.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,6 +46,8 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+
+You can see the video presentation for this project [here.](https://www.loom.com/share/8f12e2777cdc4a1980a936debc24bcd1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,7 +80,7 @@ bundle install
 
 ### Usage <a name="usage">
 ```
-ruby main.rb
+rails s
 ```
 
 ### Tests <a name="tests">
@@ -91,7 +93,7 @@ rspec spec
 
 **Bryan Hurtado**
 
-- GitHub: [@DarkxDev](https://github.com/DarkxDev)
+- GitHub: [@darkxdev](https://github.com/DarkxDev)
 - LinkedIn: [Bryan Hurtado](https://www.linkedin.com/in/bryan-hurtado/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

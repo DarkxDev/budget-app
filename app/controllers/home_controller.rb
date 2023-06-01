@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @categories = Group.includes(:entities).all
+    @categories = current_user.groups.includes(:entities).all
   end
 
   def show
